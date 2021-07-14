@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #AED6F1;
+}
+
+.resume-contents {
+    min-height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.left-section {
+    grid-column: span 2;
+    height: 100%;
+    background-color: #34495E;
+}
+
+.right-section {
+    grid-column: span 5;
+    height: 100%;
+    background-color: #D6DBDF;
+}
+
+.left-section-contents{
+    padding: 2rem 2rem;
+}
+
+.profile {
+    width: 100%;
+    border-bottom: 2px solid #1B2631;
+}
+
+.profile .profile-image {
+    width: 100%;
+    border-radius: 50%;
+    border: 8px solid #1B2631;
+}
+
+.name {
+    color: #D6DBDF;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+.profession {
+    color: #F9E79F;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+/* .contact-info { border-bottom: 2px solid #1B2631; } */
+.left-title {
+    color: #D6DBDF;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.contact-info ul {
+    padding-top: 1.5rem;
+}
+
+.contact-info ul li,
+.references ul li {
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: #d6dbdfaf;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.contact-info ul li i,
+.references ul li i {
+    padding-right: 1rem;
+    font-size: 18px;
+    color: #2E86C1;
+}
+
+.skills ul {
+    padding-top: 1.5rem;
+}
+.skills ul li p {
+    padding: .4rem 0;
+    color: #d6dbdfaf;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.referance-name {
+    padding-top: 1.5rem;
+    padding-bottom: .4rem;
+    font-size: 18px;
+    color: #F9E79F;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.referance-profession {
+    font-size: 16px;
+    color: #d6dbdfaf;
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+    padding-bottom: .4rem;
+}
+
+
+.right-section-contents {
+    padding: 2rem 2rem;
+}
+
+.right-title {
+    color: #34495E;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.gap {
+    padding-bottom: 2rem;
+}
+.about-me-contents {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+.experience-contents,
+.education-contents,
+.awards-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 2rem;
+}
+
+.exp-company-name,
+.education-school-name,
+.awards-company-name {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #21638f;
+    padding-bottom: .4rem;
+}
+
+.exp-time-period,
+.educationp-time-period,
+.awards-time-period {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+.exp-position,
+.education-subject,
+.awards-name {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #2E86C1;
+    padding-bottom: .4rem;
+}
+
+.exp-desc,
+.education-desc,
+.awards-desc {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    border-left: 3px solid #a5a3a3;
+    padding-left: 5px;
+}
+
+/* Media queries */
+@media screen and (max-width:780px) {
+    .experience-contents,
+    .education-contents,
+    .awards-contents {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:780px) {
+    .left-section {
+        grid-column: span 3;
+    }
+    
+    .right-section {
+        grid-column: span 4;
+    }
+    
+}
+
+@media screen and (max-width:1200px) {
+    .resume-contents {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:390px) {
+    .name {
+        font-size: 20px;
+    }
+
+    .profession {
+        font-size: 18px;
+    }
+
+    .left-title {
+        font-size: 18px;
+    }
+
+    .right-title {
+        font-size: 18px;
+    }
+
+    .contact-info ul li,
+    .references ul li {
+        font-size: 12px;
+    }
+
+    .contact-info ul li i,
+    .references ul li i {
+        /* padding-right: 1rem; */
+        font-size: 12px;
+    }
+
+    .skills ul li p {
+        font-size: 12px;
+    }
+
+    .about-me-contents {
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+
+    .exp-company-name,
+    .education-school-name,
+    .awards-company-name {
+        font-size: 18px;
+    }
+
+    .exp-time-period,
+    .educationp-time-period,
+    .awards-time-period {
+        font-size: 16px;
+    }
+
+    .exp-position,
+    .education-subject,
+    .awards-name {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #2E86C1;
+        padding-bottom: .4rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
