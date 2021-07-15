@@ -229,6 +229,11 @@ body {
 }
 
 @media screen and (max-width:390px) {
+    .resume-contents {
+        width: 100%;
+        margin: 0 auto;
+    }
+
     .name {
         font-size: 20px;
     }
@@ -281,31 +286,5 @@ body {
     .education-subject,
     .awards-name {
         font-size: 18px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: #2E86C1;
-        padding-bottom: .4rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
